@@ -16,8 +16,14 @@ df = pd.read_csv("C:/Users/celzhang/Desktop/gapminder.csv")
 #read column to a list in pandas (This is magic)
 life_exp = df.life_exp.tolist()
 print(life_exp)
-#put the list into histogrom
+#put the list into histogrom with 3 bins
 plt.hist(life_exp,bins=3)
+plt.show()
+#put in hist with 5 bins and clean up , start afresh with 20 bins
+plt.hist(life_exp, bins=5 )
+plt.show()
+plt.clf()
+plt.hist(life_exp,bins = 20)
 plt.show()
 
 
