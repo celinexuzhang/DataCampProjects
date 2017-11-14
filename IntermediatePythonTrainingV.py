@@ -42,7 +42,7 @@ print(europe)
 europe['China'] = 'beijing'
 print(europe)
 #double check if China is in the europe
-'China' in europe
+print('China' in europe)
 #update the key pair in the value
 europe['germany']='berlin'
 print(europe)
