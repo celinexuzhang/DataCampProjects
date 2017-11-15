@@ -49,3 +49,25 @@ print(europe)
 #remove China from europe
 del(europe['China'])
 print(europe)
+# Dictionaries can contain key:value pairs where the values are again dictionaries.
+#creat values for a key
+#Key is country, and values are in the sub-{ }
+europe = { 'spain': { 'capital':'madrid', 'population':46.77 },
+           'france': { 'capital':'paris', 'population':66.03 },
+           'germany': { 'capital':'berlin', 'population':80.62 },
+           'norway': { 'capital':'oslo', 'population':5.084 }}
+#Use chained square brackets to select and print out the capital of France.
+print(europe['france']['capital'])
+# add italy capital and population information to the dictionary
+#1. create a sub-dictionary of capital and population
+data = {
+    'capital':'rome','population':59.83
+}
+#2. add data(value) to the europe, using Italy as key
+europe = { 'spain': { 'capital':'madrid', 'population':46.77 },
+           'france': { 'capital':'paris', 'population':66.03 },
+           'germany': { 'capital':'berlin', 'population':80.62 },
+           'norway': { 'capital':'oslo', 'population':5.084 },
+           'italy':data
+           }
+print(europe)
