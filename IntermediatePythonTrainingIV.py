@@ -2,7 +2,6 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-from matplotlib import colors
 #convern poplation from CSV file to a list
 df = pd.read_csv("C:/Users/celzhang/Desktop/gapminder.csv")
 life_exp = df.life_exp.tolist()
@@ -24,7 +23,7 @@ my_dict = {
     'Americas':'yellow',
     'Oceania':'black'
 }
-#step 2: map the color to each continent
+#step 2: map the color to each continent, using dictionaries
 col_map =[my_dict[i] for i in continent]
 #update: define alpha (Alpha can be set from zero to one, where zero is totally transparent, and one is not at all transparent.)
 plt.scatter(gdp_cap, life_exp, c=col_map,alpha= 0.8, s= np_pop)
