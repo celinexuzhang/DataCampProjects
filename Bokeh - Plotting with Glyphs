@@ -1,0 +1,6 @@
+import xlrd
+from bokeh.plotting import figure, output_file, show
+from bokeh.io import output_file, show
+file_location= "C:/Users/celzhang/Desktop/Analytics/Python/Bokeh/TREND01-5G-educ-fertility-bubbles.xls"
+workbook = xlrd.open_workbook(file_location)
+CompilationData = workbook.sheet_by_index(0)
