@@ -30,4 +30,6 @@ print(cars_csv)
 
 # Import the cars.csv data: cars
 #cars = pd.read_csv(cars_csv)
+# Fix import by including index_col
+#cars = pd.read_csv('cars.csv',index_col = 0)
 
