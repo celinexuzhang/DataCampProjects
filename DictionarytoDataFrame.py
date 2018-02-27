@@ -23,3 +23,11 @@ cars.index = row_labels
 
 # Print cars again
 print(cars)
+# convert dataframe to csv
+cars_csv = pd.DataFrame.to_csv(cars,encoding='utf-8', index=False)
+# Print out cars
+print(cars_csv)
+
+# Import the cars.csv data: cars
+#cars = pd.read_csv(cars_csv)
+
